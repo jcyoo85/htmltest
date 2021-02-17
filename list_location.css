@@ -556,65 +556,180 @@ ul, p, li {
       flex-basis: 0;
 }
 
-.App-Wrapper .Content-Wrapper .Purchase-Content {
+.App-Wrapper .Content-Wrapper .List-Location-Content {
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-direction: column;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
+      -ms-flex-direction: column;
           flex-direction: column;
   overflow: auto;
   -webkit-box-shadow: 0 -2px 20px 0 rgba(0, 0, 0, 0.1);
           box-shadow: 0 -2px 20px 0 rgba(0, 0, 0, 0.1);
-  background-color: #fafafa;
 }
 
-.App-Wrapper .Content-Wrapper .Purchase-Content .Purchase-Background {
-  width: 76%;
-  left: 12%;
-  position: absolute;
-  bottom: 56px;
+.App-Wrapper .Content-Wrapper .List-Location-Content .Location-Filter-Nav {
+  overflow-x: auto;
+  white-space: nowrap;
+  overflow-scrolling: touch;
 }
 
-.App-Wrapper .Content-Wrapper .Purchase-Content .Purchase-Background .Purchase-Image {
-  margin: 0 auto;
-  max-width: 583.68px;
-}
-
-.App-Wrapper .Content-Wrapper .Purchase-Content .Purchase-Background .Purchase-Image .Purchase-Text {
-  width: 50%;
-  padding: 0 0 40px 6px;
+.App-Wrapper .Content-Wrapper .List-Location-Content .Location-Filter-Nav .Location-Filter-List {
   position: relative;
+  -ms-flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  overflow: auto;
+  -webkit-box-shadow: inset 0 -2px 0 #e9e9e9;
+          box-shadow: inset 0 -2px 0 #e9e9e9;
 }
 
-.App-Wrapper .Content-Wrapper .Purchase-Content .Purchase-Background .Purchase-Image .Purchase-Text p {
-  color: #ff6b6b;
-  font-size: 6.5vw;
-  font-weight: bold;
-  text-decoration: none;
-  text-align: left;
-  line-height: 8vw;
-}
-
-.App-Wrapper .Content-Wrapper .Purchase-Content .Purchase-Background .Purchase-Image img {
-  width: 100%;
-}
-
-.App-Wrapper .Content-Wrapper .Purchase-Content a {
-  position: fixed;
-  left: 0;
+.App-Wrapper .Content-Wrapper .List-Location-Content .Location-Filter-Nav .Location-Filter-List .Location-Filter-Active-Bar {
+  position: absolute;
+  height: 2px;
   bottom: 0;
-  width: 100%;
-  height: 56px;
-  padding: 16px 0 15px 0;
-  text-align: center;
-  text-decoration: none;
-  font-family: SpoqaHanSans;
-  font-size: 17px;
-  font-weight: bold;
-  color: #ffffff;
-  background-color: #ff6b6b;
+  background: #ff6b6b;
 }
-/*# sourceMappingURL=purchase.css.map */
+
+.App-Wrapper .Content-Wrapper .List-Location-Content .Location-Filter-Nav .Location-Filter-List .Location-Filter-Item {
+  display: inline-block;
+  padding: 13px 20px 14px 20px;
+  cursor: pointer;
+}
+
+.App-Wrapper .Content-Wrapper .List-Location-Content .Location-Filter-Nav .Location-Filter-List .Location-Filter-Item .Location-Filter-Button {
+  display: inline-block;
+  position: relative;
+  overflow: visible;
+  font-size: 13px;
+  line-height: 16px;
+  color: #7F7F7F;
+  height: 19px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.App-Wrapper .Content-Wrapper .List-Location-Content .Location-Filter-Nav .Location-Filter-List .Location-Filter-Item.Active .Location-Filter-Button {
+  color: #ff6b6b;
+}
+
+.App-Wrapper .Content-Wrapper .List-Location-Content .Location-Filter-Nav .Location-Filter-List .Location-Filter-Item.Active .Location-Filter-Button::after {
+  -webkit-transform: translate(100%, -100%);
+          transform: translate(100%, -100%);
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+  width: 3px;
+  height: 3px;
+  border-radius: 100px;
+  background-color: #ff7100;
+}
+
+.App-Wrapper .Content-Wrapper .List-Location-Content .Location-Map-Region {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.App-Wrapper .Content-Wrapper .List-Location-Content .Location-Map-Region .Location-Map-List {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  padding: 20px;
+}
+
+.App-Wrapper .Content-Wrapper .List-Location-Content .Location-Map-Region .Location-Map-List .Location-Map-Item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  width: calc(50% - 5px);
+  height: 50px;
+  border: 1px solid #CBCBCB;
+  border-radius: 50px;
+  margin-bottom: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  cursor: pointer;
+}
+
+.App-Wrapper .Content-Wrapper .List-Location-Content .Location-Map-Region .Location-Map-List .Location-Map-Item:nth-child(odd) {
+  margin-right: 10px;
+}
+
+.App-Wrapper .Content-Wrapper .List-Location-Content .Location-Map-Region .Location-Map-List .Location-Map-Item .Location-Map-Button {
+  font-size: 12px;
+  color: #cbcbcb;
+}
+
+.App-Wrapper .Content-Wrapper .List-Location-Content .Location-Map-Region .Location-Map-List .Location-Map-Item.Active {
+  border: 1px solid #ff6b6b;
+}
+
+.App-Wrapper .Content-Wrapper .List-Location-Content .Location-Map-Region .Location-Map-List .Location-Map-Item.Active button {
+  color: #ff6b6b;
+  font-weight: bold;
+}
+
+.App-Wrapper .Content-Wrapper .List-Location-Content .List-Location-Footer {
+  position: relative;
+  padding: 10px 0;
+  width: 100%;
+  max-width: 768px;
+  bottom: 0;
+  height: 56px;
+  -webkit-box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+}
+
+.App-Wrapper .Content-Wrapper .List-Location-Content .List-Location-Footer ul li button {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.App-Wrapper .Content-Wrapper .List-Location-Content .List-Location-Footer ul li.Select-Button button {
+  color: #7f7f7f;
+}
+
+.App-Wrapper .Content-Wrapper .List-Location-Content .List-Location-Footer ul li.Save-Button button {
+  color: #ff6d6b;
+}
+/*# sourceMappingURL=list_location.css.map */

@@ -556,7 +556,7 @@ ul, p, li {
       flex-basis: 0;
 }
 
-.App-Wrapper .Content-Wrapper .Purchase-Content {
+.App-Wrapper .Content-Wrapper .Purchase-List-Content {
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -566,55 +566,121 @@ ul, p, li {
   -webkit-box-direction: normal;
           flex-direction: column;
   overflow: auto;
-  -webkit-box-shadow: 0 -2px 20px 0 rgba(0, 0, 0, 0.1);
-          box-shadow: 0 -2px 20px 0 rgba(0, 0, 0, 0.1);
-  background-color: #fafafa;
 }
 
-.App-Wrapper .Content-Wrapper .Purchase-Content .Purchase-Background {
-  width: 76%;
-  left: 12%;
-  position: absolute;
-  bottom: 56px;
+.App-Wrapper .Content-Wrapper .Purchase-List-Content .Purchase-Contents {
+  padding: 16px 0 20px 0;
+  margin: 0 16px;
+  border-bottom: 1px solid #e9e9e9;
 }
 
-.App-Wrapper .Content-Wrapper .Purchase-Content .Purchase-Background .Purchase-Image {
-  margin: 0 auto;
-  max-width: 583.68px;
+.App-Wrapper .Content-Wrapper .Purchase-List-Content .Purchase-Contents:last-child {
+  border-bottom: none;
 }
 
-.App-Wrapper .Content-Wrapper .Purchase-Content .Purchase-Background .Purchase-Image .Purchase-Text {
-  width: 50%;
-  padding: 0 0 40px 6px;
-  position: relative;
+.App-Wrapper .Content-Wrapper .Purchase-List-Content .Purchase-Contents .Contents-Wrap .title-status {
+  height: 24px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #4f4f4f;
 }
 
-.App-Wrapper .Content-Wrapper .Purchase-Content .Purchase-Background .Purchase-Image .Purchase-Text p {
+.App-Wrapper .Content-Wrapper .Purchase-List-Content .Purchase-Contents .Contents-Wrap .title-status.expiration {
+  color: #cbcbcb;
+}
+
+.App-Wrapper .Content-Wrapper .Purchase-List-Content .Purchase-Contents .Contents-Wrap .period {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 17px;
+  line-height: 17px;
+}
+
+.App-Wrapper .Content-Wrapper .Purchase-List-Content .Purchase-Contents .Contents-Wrap .period .date {
+  display: inline-block;
+  width: 0;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 11px;
+  color: #7f7f7f;
+}
+
+.App-Wrapper .Content-Wrapper .Purchase-List-Content .Purchase-Contents .Contents-Wrap .period .limit {
+  display: inline-block;
+  text-align: right;
+  word-break: keep-all;
+  font-size: 11px;
+  font-weight: bold;
   color: #ff6b6b;
-  font-size: 6.5vw;
-  font-weight: bold;
-  text-decoration: none;
-  text-align: left;
-  line-height: 8vw;
 }
 
-.App-Wrapper .Content-Wrapper .Purchase-Content .Purchase-Background .Purchase-Image img {
-  width: 100%;
+.App-Wrapper .Content-Wrapper .Purchase-List-Content .Purchase-Contents .Contents-Wrap .contents {
+  margin: 10px 0 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-.App-Wrapper .Content-Wrapper .Purchase-Content a {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 56px;
-  padding: 16px 0 15px 0;
-  text-align: center;
-  text-decoration: none;
-  font-family: SpoqaHanSans;
-  font-size: 17px;
-  font-weight: bold;
-  color: #ffffff;
-  background-color: #ff6b6b;
+.App-Wrapper .Content-Wrapper .Purchase-List-Content .Purchase-Contents .Contents-Wrap .contents .contents-image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 60px;
+  height: 60px;
+  overflow: hidden;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-color: #f3f3f3;
+  border: 1px solid #e9e9e9;
+  margin: 0 16px 0 0;
 }
-/*# sourceMappingURL=purchase.css.map */
+
+.App-Wrapper .Content-Wrapper .Purchase-List-Content .Purchase-Contents .Contents-Wrap .contents .contents-info {
+  display: inline-block;
+  width: 0;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  color: #333333;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.App-Wrapper .Content-Wrapper .Purchase-List-Content .Purchase-Contents .Contents-Wrap .contents .contents-info .title {
+  height: 20px;
+  line-height: 20px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #4f4f4f;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.App-Wrapper .Content-Wrapper .Purchase-List-Content .Purchase-Contents .Contents-Wrap .contents .contents-info .info {
+  height: 18px;
+  line-height: 18px;
+  font-size: 12px;
+  font-weight: normal;
+  letter-spacing: normal;
+  color: #7f7f7f;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+}
+
+.App-Wrapper .Content-Wrapper .Purchase-List-Content .Purchase-Contents .Contents-Wrap .contents .contents-info .price {
+  height: 18px;
+  line-height: 18px;
+  font-size: 12px;
+  font-weight: normal;
+  letter-spacing: normal;
+  color: #7f7f7f;
+  margin: 4px 0 0 0;
+}
+/*# sourceMappingURL=purchase_list.css.map */

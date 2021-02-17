@@ -556,7 +556,7 @@ ul, p, li {
       flex-basis: 0;
 }
 
-.App-Wrapper .Content-Wrapper .Purchase-Content {
+.App-Wrapper .Content-Wrapper .List-Content {
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -566,55 +566,56 @@ ul, p, li {
   -webkit-box-direction: normal;
           flex-direction: column;
   overflow: auto;
-  -webkit-box-shadow: 0 -2px 20px 0 rgba(0, 0, 0, 0.1);
-          box-shadow: 0 -2px 20px 0 rgba(0, 0, 0, 0.1);
-  background-color: #fafafa;
 }
 
-.App-Wrapper .Content-Wrapper .Purchase-Content .Purchase-Background {
-  width: 76%;
-  left: 12%;
-  position: absolute;
-  bottom: 56px;
+.App-Wrapper .Content-Wrapper .List-Content ul {
+  margin: 0;
+  padding: 0;
 }
 
-.App-Wrapper .Content-Wrapper .Purchase-Content .Purchase-Background .Purchase-Image {
-  margin: 0 auto;
-  max-width: 583.68px;
+.App-Wrapper .Content-Wrapper .List-Content ul li {
+  list-style: none;
+  margin: 0 0 6px 0;
 }
 
-.App-Wrapper .Content-Wrapper .Purchase-Content .Purchase-Background .Purchase-Image .Purchase-Text {
-  width: 50%;
-  padding: 0 0 40px 6px;
+.App-Wrapper .Content-Wrapper .List-Content ul li:last-child {
+  margin: 0;
+}
+
+.App-Wrapper .Content-Wrapper .List-Content ul li .List-Content-img {
+  display: block;
+  position: relative;
+  background-size: cover;
+  background-position: 50% 50%;
+  height: 35vh;
+}
+
+.App-Wrapper .Content-Wrapper .List-Content ul li .List-Content-image {
+  display: block;
   position: relative;
 }
 
-.App-Wrapper .Content-Wrapper .Purchase-Content .Purchase-Background .Purchase-Image .Purchase-Text p {
-  color: #ff6b6b;
-  font-size: 6.5vw;
-  font-weight: bold;
-  text-decoration: none;
-  text-align: left;
-  line-height: 8vw;
-}
-
-.App-Wrapper .Content-Wrapper .Purchase-Content .Purchase-Background .Purchase-Image img {
+.App-Wrapper .Content-Wrapper .List-Content ul li .List-Content-image img {
   width: 100%;
 }
 
-.App-Wrapper .Content-Wrapper .Purchase-Content a {
-  position: fixed;
-  left: 0;
-  bottom: 0;
+.App-Wrapper .Content-Wrapper .List-Content ul li .List-Content-txt {
+  position: absolute;
   width: 100%;
-  height: 56px;
-  padding: 16px 0 15px 0;
+  bottom: 16px;
   text-align: center;
-  text-decoration: none;
-  font-family: SpoqaHanSans;
-  font-size: 17px;
-  font-weight: bold;
-  color: #ffffff;
-  background-color: #ff6b6b;
 }
-/*# sourceMappingURL=purchase.css.map */
+
+.App-Wrapper .Content-Wrapper .List-Content ul li .List-Content-txt p {
+  display: inline-block;
+  max-width: 90%;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  line-height: 1.4;
+  letter-spacing: -0.3px;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+/*# sourceMappingURL=detail_list.css.map */

@@ -556,7 +556,7 @@ ul, p, li {
       flex-basis: 0;
 }
 
-.App-Wrapper .Content-Wrapper .Purchase-Content {
+.App-Wrapper .Content-Wrapper .Purchase-Detail-Content {
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -571,50 +571,237 @@ ul, p, li {
   background-color: #fafafa;
 }
 
-.App-Wrapper .Content-Wrapper .Purchase-Content .Purchase-Background {
-  width: 76%;
-  left: 12%;
-  position: absolute;
-  bottom: 56px;
-}
-
-.App-Wrapper .Content-Wrapper .Purchase-Content .Purchase-Background .Purchase-Image {
-  margin: 0 auto;
-  max-width: 583.68px;
-}
-
-.App-Wrapper .Content-Wrapper .Purchase-Content .Purchase-Background .Purchase-Image .Purchase-Text {
-  width: 50%;
-  padding: 0 0 40px 6px;
+.App-Wrapper .Content-Wrapper .Purchase-Detail-Content .Purchase-Detail-Background {
   position: relative;
-}
-
-.App-Wrapper .Content-Wrapper .Purchase-Content .Purchase-Background .Purchase-Image .Purchase-Text p {
-  color: #ff6b6b;
-  font-size: 6.5vw;
-  font-weight: bold;
-  text-decoration: none;
-  text-align: left;
-  line-height: 8vw;
-}
-
-.App-Wrapper .Content-Wrapper .Purchase-Content .Purchase-Background .Purchase-Image img {
   width: 100%;
+  height: 60%;
+  background-size: cover;
+  background-position: 50% 50%;
 }
 
-.App-Wrapper .Content-Wrapper .Purchase-Content a {
-  position: fixed;
-  left: 0;
+.App-Wrapper .Content-Wrapper .Purchase-Detail-Content .Purchase-Detail-Background .Background-Gradient {
+  position: absolute;
+  width: 100%;
+  height: 44px;
   bottom: 0;
-  width: 100%;
-  height: 56px;
-  padding: 16px 0 15px 0;
-  text-align: center;
-  text-decoration: none;
-  font-family: SpoqaHanSans;
-  font-size: 17px;
-  font-weight: bold;
-  color: #ffffff;
-  background-color: #ff6b6b;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), to(#fafafa));
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), #fafafa);
 }
-/*# sourceMappingURL=purchase.css.map */
+
+.App-Wrapper .Content-Wrapper .Purchase-Detail-Content .Detail-Contents {
+  position: fixed;
+  left: 6.25%;
+  bottom: 20px;
+  width: 87.5%;
+}
+
+.App-Wrapper .Content-Wrapper .Purchase-Detail-Content .Detail-Contents .Notice-Comment {
+  width: 77.5%;
+  max-width: 595px;
+  margin: 0 auto;
+  padding: 7px 0;
+  border-radius: 10px 10px 0 0;
+  -webkit-box-shadow: 0 2px 10px 2px rgba(0, 0, 0, 0.08);
+          box-shadow: 0 2px 10px 2px rgba(0, 0, 0, 0.08);
+  background-color: #f3f3f3;
+  font-weight: bold;
+  font-size: 12px;
+  text-align: center;
+  color: #4f4f4f;
+}
+
+.App-Wrapper .Content-Wrapper .Purchase-Detail-Content .Detail-Contents .Detail-Card {
+  max-width: 672px;
+  margin: 0 auto;
+  padding: 0 16px 16px 16px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 2px 10px 2px rgba(0, 0, 0, 0.08);
+          box-shadow: 0 2px 10px 2px rgba(0, 0, 0, 0.08);
+  background-color: #ffffff;
+}
+
+.App-Wrapper .Content-Wrapper .Purchase-Detail-Content .Detail-Contents .Detail-Card .status-info {
+  padding: 19px 0 23px 0;
+  text-align: center;
+  border-bottom: 1px dashed #dbdbdb;
+}
+
+.App-Wrapper .Content-Wrapper .Purchase-Detail-Content .Detail-Contents .Detail-Card .status-info .status {
+  height: 29px;
+  line-height: 29px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #7f7f7f;
+}
+
+.App-Wrapper .Content-Wrapper .Purchase-Detail-Content .Detail-Contents .Detail-Card .status-info .period {
+  margin: 11px 0 0 0;
+  height: 18px;
+  line-height: 18px;
+  font-size: 12px;
+  font-weight: normal;
+  color: #7f7f7f;
+}
+
+.App-Wrapper .Content-Wrapper .Purchase-Detail-Content .Detail-Contents .Detail-Card .status-info .period span {
+  font-weight: bold;
+}
+
+.App-Wrapper .Content-Wrapper .Purchase-Detail-Content .Detail-Contents .Detail-Card .status-info.used {
+  padding: 21px 0;
+}
+
+.App-Wrapper .Content-Wrapper .Purchase-Detail-Content .Detail-Contents .Detail-Card .status-info.used .status {
+  height: 29px;
+  line-height: 29px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #ff6b6b;
+}
+
+.App-Wrapper .Content-Wrapper .Purchase-Detail-Content .Detail-Contents .Detail-Card .status-info.used .period {
+  margin: 0;
+  height: 29px;
+  line-height: 29px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #4f4f4f;
+}
+
+.App-Wrapper .Content-Wrapper .Purchase-Detail-Content .Detail-Contents .Detail-Card .restaurant-info {
+  margin: 20px 0;
+}
+
+.App-Wrapper .Content-Wrapper .Purchase-Detail-Content .Detail-Contents .Detail-Card .restaurant-info p {
+  margin: 0 0 6px 0;
+  width: 100%;
+  display: inline-block;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-weight: bold;
+  color: #4f4f4f;
+}
+
+.App-Wrapper .Content-Wrapper .Purchase-Detail-Content .Detail-Contents .Detail-Card .restaurant-info .menu-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.App-Wrapper .Content-Wrapper .Purchase-Detail-Content .Detail-Contents .Detail-Card .restaurant-info .menu-info p {
+  display: inline-block;
+  width: 0;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding: 0 8px 0 0;
+  font-size: 14px;
+  font-weight: normal;
+  color: #7f7f7f;
+  line-height: 20px;
+}
+
+.App-Wrapper .Content-Wrapper .Purchase-Detail-Content .Detail-Contents .Detail-Card .restaurant-info .menu-info a {
+  display: inline-block;
+  text-align: right;
+  text-decoration: none;
+  word-break: keep-all;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 20px;
+  color: #cbcbcb;
+}
+
+.App-Wrapper .Content-Wrapper .Purchase-Detail-Content .Detail-Contents .Detail-Card .price-info {
+  padding: 14px;
+  border-radius: 10px;
+  background-color: rgba(243, 243, 243, 0.6);
+}
+
+.App-Wrapper .Content-Wrapper .Purchase-Detail-Content .Detail-Contents .Detail-Card .price-info .info-title {
+  height: 20px;
+  line-height: 20px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #4f4f4f;
+}
+
+.App-Wrapper .Content-Wrapper .Purchase-Detail-Content .Detail-Contents .Detail-Card .price-info .info-time {
+  margin: 2px 0 0 0;
+  height: 17px;
+  line-height: 17px;
+  font-size: 11px;
+  color: #7f7f7f;
+}
+
+.App-Wrapper .Content-Wrapper .Purchase-Detail-Content .Detail-Contents .Detail-Card .price-info .info-detail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px 0 0 0;
+}
+
+.App-Wrapper .Content-Wrapper .Purchase-Detail-Content .Detail-Contents .Detail-Card .price-info .info-detail .title {
+  display: inline-block;
+  width: 0;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  font-size: 14px;
+  color: #7f7f7f;
+}
+
+.App-Wrapper .Content-Wrapper .Purchase-Detail-Content .Detail-Contents .Detail-Card .price-info .info-detail .detail {
+  display: block;
+  text-align: right;
+  font-size: 14px;
+  font-weight: bold;
+  color: #7f7f7f;
+}
+
+.App-Wrapper .Content-Wrapper .Purchase-Detail-Content .Detail-Contents .Detail-Card .price-info .info-detail .detail span {
+  display: block;
+  font-size: 12px;
+  font-weight: normal;
+}
+
+.App-Wrapper .Content-Wrapper .Purchase-Detail-Content .Detail-Contents .Detail-Card .price-info .info-refund {
+  margin: 14px 0 0 0;
+  opacity: 0.5;
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+  color: #7f7f7f;
+}
+
+.App-Wrapper .Content-Wrapper .Purchase-Detail-Content .Detail-Contents .Detail-Card .Expiration-Comment {
+  margin: 16px 0 0 0;
+  font-size: 11px;
+  font-weight: normal;
+  color: #7f7f7f;
+}
+
+.App-Wrapper .Content-Wrapper .Purchase-Detail-Content .Detail-Contents .Button-Inquiry {
+  margin: 20px 0 0 0;
+  text-align: center;
+}
+
+.App-Wrapper .Content-Wrapper .Purchase-Detail-Content .Detail-Contents .Button-Inquiry a {
+  display: inline-block;
+  padding: 6px 32px 8px 32px;
+  border-radius: 17px;
+  border: solid 1px #cbcbcb;
+  background-color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #7f7f7f;
+}
+/*# sourceMappingURL=purchase_detail_layer.css.map */
