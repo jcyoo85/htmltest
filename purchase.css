@@ -594,7 +594,7 @@ input::-webkit-search-cancel-button {
 }
 
 .Purchase-Content .Purchase-Background .Purchase-Image .Purchase-Text {
-  width: 50%;
+  width: 100%;
   padding: 0 0 40px 6px;
   position: relative;
 }
