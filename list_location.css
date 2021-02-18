@@ -759,7 +759,7 @@ ul, p, li {
 
 .App-Wrapper .Content-Wrapper .List-Location-Content .List-Location-Footer ul li button {
   height: 56px;
-  padding: 18px 24px 16px 24px;
+  padding: 16px 24px;
   font-size: 16px;
   font-weight: bold;
 }

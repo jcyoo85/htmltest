@@ -296,7 +296,6 @@ ul,p,li{padding:0;margin:0;list-style:none;}
                 overflow-x: auto;
                 white-space: nowrap;
                 overflow-scrolling: touch;
-                
                 .Location-Filter-List {
                     position: relative;
                     -ms-flex-direction: column;
@@ -427,7 +426,7 @@ ul,p,li{padding:0;margin:0;list-style:none;}
                     li {
                         button {
                             height: 56px;
-                            padding: 18px 24px 16px 24px;
+                            padding: 16px 24px;
                             font-size: 16px;
                             font-weight: bold;
                         }
