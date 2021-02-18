@@ -1,0 +1,67 @@
+<html lang="en">
+  <head>
+    <!-- The first thing in any HTML file should be the charset -->
+    <meta charset="utf-8" />
+
+    <!-- Make the page mobile compatible -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Allow installing the app to the homescreen -->
+    <meta name="mobile-web-app-capable" content="yes" />
+
+    <link rel="icon" href="/favicon.ico" />
+    <title>구매 완료 - 기간 만료</title>
+    <link rel="stylesheet" href="purchase_detail_layer.css" />
+  </head>
+
+  <body class="manggo-Wrap">
+
+    <!-- The app hooks into this div -->
+    <div id="app">
+      <div class="App-Wrapper">
+        <div class="Navbar-Wrapper">
+          <div class="Nav-Content">
+            <i class="Back-Button"></i>
+            <i class="Close-Button"></i>
+          </div>
+        </div>
+        <div class="Content-Wrapper">
+          <div class="Purchase-Detail-Content">
+            <div class="Purchase-Detail-Background" style="background-image:url('https://mp-seoul-image-production-s3.mangoplate.com/eat_deal_pictures/ut3rfnns5wqwldb_.jpg');">
+              <div class="Background-Gradient"></div>
+            </div>
+            <div class="Detail-Contents">
+              <div class="Detail-Card">
+                <div class="status-info">
+                  <p class="status">기간 만료</p>
+                  <p class="period"><span>사용 기간 7일</span> 2020-01-01 ~ 2021-01-01</p>
+                </div>
+                <div class="restaurant-info">
+                  <p>식당명입니다. 한 줄까지 노출됩니다. 식당명입니다. 한 줄까지 노출됩니다.</p>
+                  <div class="menu-info">
+                    <p>메뉴 정보는 한 줄까지 노출됩니다. 메뉴 정보는 한 줄까지 노출됩니다.</p>
+                    <a href=""><span>상세 보기</span><i class="icon icon-ic-ar-photo-next"></i></a>
+                  </div>
+                </div>
+                <div class="price-info">
+                  <p class="info-title">결제정보</p>
+                  <p class="info-time">결제 2018-03-01 01:22:20</p>
+                  <div class="info-detail">
+                    <p class="title">총 결제금액</p>
+                    <p class="detail">9,300원<span>(신용카드)</span></p>
+                  </div>
+                </div>
+                <p class="Expiration-Comment">
+                  기간 만료 이후에는 결제 금액의 90% 환불이 가능합니다. 환불 문의 처리는 최대 5일 영업일이 소요될 수 있습니다.
+                </p>
+              </div>
+              <div class="Button-Inquiry">
+                <a href="">문의하기</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
