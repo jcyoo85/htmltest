@@ -11,12 +11,20 @@
   <body>
 
     <div id="app">
-      <div class="appWrapper">
+      <div class="App-Wrapper">
 
-        <div class="navBar">
-          <div class="contentWrap">
-            <i class="backButton"></i>
-            <i class="closeButton"></i>
+        <div class="Navbar-Wrapper">
+          <div class="Nav-Content">
+            <i class="Back-Button"></i>
+            <i class="Close-Button"></i>
+          </div>
+          <div class="Location-Filter-Nav">
+            <div class="Location-Map-List">
+              <button>지역선택 ></button>
+              <!--활성화 class명: on 추가-->
+              <button class="on">강남역 ></button>
+              <!--//활성화 class명: on 추가-->
+            </div>
           </div>
         </div>
         
@@ -24,97 +32,137 @@
           
           <ul class="eatList">
             <li>
-              <div class="thumb">
-                <span class="badge-hot">HOT</span>
-                <img src="https://mp-seoul-image-production-s3.mangoplate.com/eat_deal_pictures/ut3rfnns5wqwldb_.jpg">
-              </div>
-              <div class="list-contents">
-                <p class="storeName">[신논현] 앙트레블</p>
-                <p class="menuName">과카몰리&토마토 오픈샌드위치</p>
-                <p class="notSalePrice">12,000원</p>
-                <div class="sale-info">
-                  <p class="salePer">10%</p>
-                  <p class="salePrice">10,800<em>원</em></p>
+              <a href="#">
+                <div class="thumb">
+                  <!-- 모두 판매시 노출 - 노출class명:visible, 비노출class명:invisible -->
+                  <div class="mask invisible"></div>
+                  <!-- //모두 판매시 노출-->
+                  <span class="badge-hot">HOT</span>
+                  <img src="https://mp-seoul-image-production-s3.mangoplate.com/eat_deal_pictures/ut3rfnns5wqwldb_.jpg">
                 </div>
-                <div class="list-text">
-                  포장 & 픽업 가능한 EAT 딜입니다.
+                <div class="list-contents">
+                  <p class="storeName">[신논현] 앙트레블</p>
+                  <p class="menuName">과카몰리&토마토 오픈샌드위치</p>
+                  <p class="notSalePrice">12,000원</p>
+                  <div class="sale-info">
+                    <p class="salePer">10%</p>
+                    <p class="salePrice">10,800<em>원</em></p>
+                    <!-- 모두 판매시 노출 - 노출class명:visible, 비노출class명:invisible -->
+                    <p class="soldout invisible">모두 판매되었습니다.</p>
+                    <!-- //모두 판매시 노출-->
+                  </div>
+                  <div class="list-text">
+                    포장 & 픽업 가능한 EAT 딜입니다.
+                  </div>
                 </div>
-              </div>
+              </a>
             </li>
             <li>
-              <div class="thumb">
-                <span class="badge-hot">HOT</span>
-                <img src="https://mp-seoul-image-production-s3.mangoplate.com/eat_deal_pictures/2zx3dog-cafrl2uv.jpg">
-              </div>
-              <div class="list-contents">
-                <p class="storeName">[신논현] 앙트레블</p>
-                <p class="menuName">사과&브리치즈샌드위치</p>
-                <p class="notSalePrice">12,000원</p>
-                <div class="sale-info">
-                  <p class="salePer">-1,200원</p>
-                  <p class="salePrice">10,800<em>원</em></p>
+              <a href="#">
+                <div class="thumb">
+                  <!-- 모두 판매시 노출 - 노출class명:visible, 비노출class명:invisible -->
+                  <div class="mask invisible"></div>
+                  <!-- //모두 판매시 노출-->
+                  <span class="badge-hot">HOT</span>
+                  <img src="https://mp-seoul-image-production-s3.mangoplate.com/eat_deal_pictures/2zx3dog-cafrl2uv.jpg">
                 </div>
-                <div class="list-text">
-                  포장 & 픽업 가능한 EAT 딜입니다.
+                <div class="list-contents">
+                  <p class="storeName">[신논현] 앙트레블</p>
+                  <p class="menuName">사과&브리치즈샌드위치</p>
+                  <p class="notSalePrice">12,000원</p>
+                  <div class="sale-info">
+                    <p class="salePer">-1,200원</p>
+                    <p class="salePrice">10,800<em>원</em></p>
+                    <!-- 모두 판매시 노출 - 노출class명:visible, 비노출class명:invisible -->
+                    <p class="soldout invisible">모두 판매되었습니다.</p>
+                    <!-- //모두 판매시 노출-->
+                  </div>
+                  <div class="list-text">
+                    포장 & 픽업 가능한 EAT 딜입니다.
+                  </div>
                 </div>
-              </div>
+              </a>
             </li>
             <li>
-              <div class="thumb">
-                <span class="badge-hot">HOT</span>
-                <img src="https://mp-seoul-image-production-s3.mangoplate.com/eat_deal_pictures/hp6kmjw04z5votbs.jpg">
-              </div>
-              <div class="list-contents">
-                <p class="storeName">[신논현] 앙트레블</p>
-                <p class="menuName">타이쉬림프&오믈렛샌드위치</p>
-                <p class="notSalePrice">12,000원</p>
-                <div class="sale-info">
-                  <p class="remain">10개 남음</p>
-                  <p class="salePer">-1,200원</p>
-                  <p class="salePrice">10,800<em>원</em></p>
+              <a href="#">
+                <div class="thumb">
+                  <!-- 모두 판매시 노출 - 노출class명:visible, 비노출class명:invisible -->
+                  <div class="mask invisible"></div>
+                  <!-- //모두 판매시 노출-->
+                  <span class="badge-hot">HOT</span>
+                  <img src="https://mp-seoul-image-production-s3.mangoplate.com/eat_deal_pictures/hp6kmjw04z5votbs.jpg">
                 </div>
-                <div class="list-text">
-                  포장 & 픽업 가능한 EAT 딜입니다.
+                <div class="list-contents">
+                  <p class="storeName">[신논현] 앙트레블</p>
+                  <p class="menuName">타이쉬림프&오믈렛샌드위치</p>
+                  <p class="notSalePrice">12,000원</p>
+                  <div class="sale-info">
+                    <p class="remain">10개 남음</p>
+                    <p class="salePer">-1,200원</p>
+                    <p class="salePrice">10,800<em>원</em></p>
+                    <!-- 모두 판매시 노출 - 노출class명:visible, 비노출class명:invisible -->
+                    <p class="soldout invisible">모두 판매되었습니다.</p>
+                    <!-- //모두 판매시 노출-->
+                  </div>
+                  <div class="list-text">
+                    포장 & 픽업 가능한 EAT 딜입니다.
+                  </div>
                 </div>
-              </div>
+              </a>
             </li>
             <li>
-              <div class="thumb">
-                <span class="badge-hot">HOT</span>
-                <img src="https://mp-seoul-image-production-s3.mangoplate.com/eat_deal_pictures/byi7d3dz7g99iw72.jpg">
-              </div>
-              <div class="list-contents">
-                <p class="storeName">[강남역] 오스틴 강남점</p>
-                <p class="menuName">2인용 플래터 (No.2-6)</p>
-                <p class="notSalePrice">32,900원</p>
-                <div class="sale-info">
-                  <p class="remain">10개 남음</p>
-                  <p class="salePer">0%</p>
-                  <p class="salePrice">32,900<em>원</em></p>
+              <a href="#">
+                <div class="thumb">
+                  <!-- 모두 판매시 노출 - 노출class명:visible, 비노출class명:invisible -->
+                  <div class="mask invisible"></div>
+                  <!-- //모두 판매시 노출-->
+                  <span class="badge-hot">HOT</span>
+                  <img src="https://mp-seoul-image-production-s3.mangoplate.com/eat_deal_pictures/byi7d3dz7g99iw72.jpg">
                 </div>
-                <div class="list-text">
-                  포장 & 픽업 가능한 EAT 딜입니다.
+                <div class="list-contents">
+                  <p class="storeName">[강남역] 오스틴 강남점</p>
+                  <p class="menuName">2인용 플래터 (No.2-6)</p>
+                  <p class="notSalePrice">32,900원</p>
+                  <div class="sale-info">
+                    <p class="remain">10개 남음</p>
+                    <p class="salePer">0%</p>
+                    <p class="salePrice">32,900<em>원</em></p>
+                    <!-- 모두 판매시 노출 - 노출class명:visible, 비노출class명:invisible -->
+                    <p class="soldout invisible">모두 판매되었습니다.</p>
+                    <!-- //모두 판매시 노출-->
+                  </div>
+                  <div class="list-text">
+                    포장 & 픽업 가능한 EAT 딜입니다.
+                  </div>
                 </div>
-              </div>
+              </a>
             </li>
             <li>
-              <div class="thumb">
-                <span class="badge-hot">HOT</span>
-                <img src="https://mp-seoul-image-production-s3.mangoplate.com/eat_deal_pictures/tkxegsfbnlflcpdv.jpg">
-              </div>
-              <div class="list-contents">
-                <p class="storeName">[광화문] 힐사이드테이블</p>
-                <p class="menuName">과카몰리&토마토 오픈샌드위치</p>
-                <p class="notSalePrice">13,500원</p>
-                <div class="sale-info">
-                  <p class="remain">0개 남음</p>
-                  <p class="salePer">20%</p>
-                  <p class="salePrice">10,800<em>원</em></p>
+              <a href="#">
+                <div class="thumb">
+                  <!-- 모두 판매시 노출 - 노출class명:visible, 비노출class명:invisible -->
+                  <div class="mask invisible"></div>
+                  <!-- //모두 판매시 노출-->
+                  <span class="badge-hot">HOT</span>
+                  <img src="https://mp-seoul-image-production-s3.mangoplate.com/eat_deal_pictures/tkxegsfbnlflcpdv.jpg">
                 </div>
-                <div class="list-text">
-                  포장 & 픽업 가능한 EAT 딜입니다.
+                <div class="list-contents">
+                  <p class="storeName">[광화문] 힐사이드테이블</p>
+                  <p class="menuName">과카몰리&토마토 오픈샌드위치</p>
+                  <p class="notSalePrice">13,500원</p>
+                  <div class="sale-info">
+                    <p class="remain">0개 남음</p>
+                    <p class="salePer">20%</p>
+                    <p class="salePrice">10,800<em>원</em></p>
+                    <!-- 모두 판매시 노출 - 노출class명:visible, 비노출class명:invisible -->
+                    <p class="soldout invisible">모두 판매되었습니다.</p>
+                    <!-- //모두 판매시 노출-->
+                  </div>
+                  <div class="list-text">
+                    포장 & 픽업 가능한 EAT 딜입니다.
+                  </div>
                 </div>
-              </div>
+              </a>
             </li>
           </ul>
 
