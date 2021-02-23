@@ -588,12 +588,12 @@ ul, p, li {
 
 .App-Wrapper .Content-Wrapper .Purchase-Content .Purchase-Background .Purchase-Image {
   margin: 0 auto;
-  max-width: 584px;
+  max-width: 400px;
 }
 
 .App-Wrapper .Content-Wrapper .Purchase-Content .Purchase-Background .Purchase-Image .Purchase-Text {
   width: 100%;
-  padding: 0 0 40px 6px;
+  padding: 0 0 14% 6px;
   position: relative;
 }
 
@@ -603,7 +603,13 @@ ul, p, li {
   font-weight: bold;
   text-decoration: none;
   text-align: left;
-  line-height: 8vw;
+  line-height: 1.2;
+}
+
+@media screen and (min-width: 524px){
+  .App-Wrapper .Content-Wrapper .Purchase-Content .Purchase-Background .Purchase-Image .Purchase-Text p {
+    font-size: 37px;
+  }
 }
 
 .App-Wrapper .Content-Wrapper .Purchase-Content .Purchase-Background .Purchase-Image img {
