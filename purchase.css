@@ -588,7 +588,7 @@ ul, p, li {
 
 .App-Wrapper .Content-Wrapper .Purchase-Content .Purchase-Background .Purchase-Image {
   margin: 0 auto;
-  max-width: 583.68px;
+  max-width: 584px;
 }
 
 .App-Wrapper .Content-Wrapper .Purchase-Content .Purchase-Background .Purchase-Image .Purchase-Text {
@@ -599,7 +599,7 @@ ul, p, li {
 
 .App-Wrapper .Content-Wrapper .Purchase-Content .Purchase-Background .Purchase-Image .Purchase-Text p {
   color: #ff6b6b;
-  font-size: 6.5vw;
+  font-size: 6.4vw;
   font-weight: bold;
   text-decoration: none;
   text-align: left;
