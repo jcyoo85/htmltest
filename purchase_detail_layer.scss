@@ -10,8 +10,9 @@ html {
     -ms-text-size-adjust: 100%; /* 5 */
     -webkit-text-size-adjust: 100%; /* 5 */
     word-break: break-word; /* 6 */
+    font-family: 'Spoqa Han Sans', 'Spoqa Han Sans JP', 'Sans-serif';
 }
-body {margin: 0;}
+body {margin: 0; font-family: 'Spoqa Han Sans', 'Spoqa Han Sans JP', 'Sans-serif';}
 h1 {font-size: 2em; margin: 0.67em 0;}
 dl dl, dl ol, dl ul, ol dl, ul dl {margin: 0;}
 ol ol, ol ul, ul ol, ul ul {margin: 0;}
