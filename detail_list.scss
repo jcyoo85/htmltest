@@ -96,7 +96,7 @@ html, body {height: 100%;width: 100%;line-height: 1.5;}
 body {font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;overflow: hidden;}
 input, select {font-family: inherit;font-size: inherit;}
 input, [type='search'] {-webkit-appearance: none;}
-input:focus, textarea:focus, select:focus {outline: none;}
+input:focus, textarea:focus, select:focus, button:focus {outline: none; border: none;} 
 input::-webkit-search-cancel-button {-webkit-appearance: none;}
 button {display: inline-block; border: none; margin: 0; padding:0; text-decoration: none; cursor: pointer; text-align: center; background-color: transparent; -webkit-appearance: none; -moz-appearance: none;}
 .text-left {text-align: left;}

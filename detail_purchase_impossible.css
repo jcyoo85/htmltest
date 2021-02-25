@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* reset */
 *, ::before, ::after {box-sizing: border-box;}
 ::before, ::after {text-decoration: inherit; /* 1 */vertical-align: inherit; /* 2 */}

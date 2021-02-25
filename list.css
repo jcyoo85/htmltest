@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* reset */
 *, ::before, ::after {box-sizing: border-box;}
 ::before, ::after {text-decoration: inherit; /* 1 */vertical-align: inherit; /* 2 */}
@@ -95,7 +96,7 @@ html, body {height: 100%;width: 100%;line-height: 1.5;}
 body {font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;}
 input, select {font-family: inherit;font-size: inherit;}
 input, [type='search'] {-webkit-appearance: none;}
-input:focus, textarea:focus, select:focus {outline: none;}
+input:focus, textarea:focus, select:focus, button:focus {outline: none; border: none;} 
 input::-webkit-search-cancel-button {-webkit-appearance: none;}
 .text-left {text-align: left;}
 .text-right {text-align: right;}

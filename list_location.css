@@ -330,8 +330,9 @@ input, [type='search'] {
   -webkit-appearance: none;
 }
 
-input:focus, textarea:focus, select:focus {
+input:focus, textarea:focus, select:focus, button:focus {
   outline: none;
+  border: none;
 }
 
 input::-webkit-search-cancel-button {
@@ -579,13 +580,9 @@ ul, p, li {
 }
 
 .App-Wrapper .Content-Wrapper .List-Location-Content .Location-Filter-Nav {
-  overflow-x: auto;
   white-space: nowrap;
-  overflow-scrolling: touch;
-  -ms-overflow-style: none;
-  /* IE and Edge */
-  scrollbar-width: none;
-  /* Firefox */
+  -webkit-box-shadow: inset 0 -2px 0 #e9e9e9;
+          box-shadow: inset 0 -2px 0 #e9e9e9;
 }
 
 .App-Wrapper .Content-Wrapper .List-Location-Content .Location-Filter-Nav .Location-Filter-List {
@@ -595,8 +592,15 @@ ul, p, li {
   -webkit-box-direction: normal;
   flex-direction: column;
   overflow: auto;
-  -webkit-box-shadow: inset 0 -2px 0 #e9e9e9;
-          box-shadow: inset 0 -2px 0 #e9e9e9;
+  -ms-overflow-style: none !important;
+  /* IE and Edge */
+  scrollbar-width: none !important;
+  /* Firefox */
+}
+
+.App-Wrapper .Content-Wrapper .List-Location-Content .Location-Filter-Nav .Location-Filter-List::-webkit-scrollbar {
+  display: none !important;
+  /* Chrome, Safari, Opera*/
 }
 
 .App-Wrapper .Content-Wrapper .List-Location-Content .Location-Filter-Nav .Location-Filter-List .Location-Filter-Active-Bar {
@@ -642,11 +646,6 @@ ul, p, li {
   background-color: #ff7100;
 }
 
-.App-Wrapper .Content-Wrapper .List-Location-Content .Location-Filter-Nav::-webkit-scrollbar {
-  display: none;
-  /* Chrome, Safari, Opera*/
-}
-
 .App-Wrapper .Content-Wrapper .List-Location-Content .Location-Map-Region {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -662,6 +661,15 @@ ul, p, li {
       flex-shrink: 0;
   overflow-y: auto;
   overflow-x: hidden;
+  -ms-overflow-style: none !important;
+  /* IE and Edge */
+  scrollbar-width: none !important;
+  /* Firefox */
+}
+
+.App-Wrapper .Content-Wrapper .List-Location-Content .Location-Map-Region::-webkit-scrollbar {
+  display: none !important;
+  /* Chrome, Safari, Opera*/
 }
 
 .App-Wrapper .Content-Wrapper .List-Location-Content .Location-Map-Region .Location-Map-List {
