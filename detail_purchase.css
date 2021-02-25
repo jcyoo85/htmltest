@@ -351,7 +351,7 @@ right: 16px;
     .dialog .contents{max-width:688px;}
 }
 .dialog .contents p {height:27px;line-height: 27px;font-size: 18px;font-weight:700;color:#4f4f4f;text-align: center;}
-.dialog .contents .scrollbox{height:239px;margin-top: 20px;padding: 10px 10px 0;border-radius: 10px;background-color: rgba(243, 243, 243, 0.5);overflow-y: scroll;font-size: 14px;color:#4f4f4f;box-sizing: border-box;}
+.dialog .contents .scrollbox{height:239px;margin-top: 20px;padding: 10px 10px 0;border-radius: 10px;background-color: rgba(243, 243, 243, 0.5);overflow-y: auto;font-size: 14px;color:#4f4f4f;box-sizing: border-box;}
 .dialog .contents .btns{display: flex;justify-content: space-around;}
 .dialog .contents .btns a{display:block;padding-top: 19px;}
 .dialog .contents .btns a.btn_cancel{font-size:16px;font-weight:700;color:#7f7f7f;}
