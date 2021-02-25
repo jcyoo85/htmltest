@@ -296,6 +296,9 @@ ul,p,li{padding:0;margin:0;list-style:none;}
                 overflow-x: auto;
                 white-space: nowrap;
                 overflow-scrolling: touch;
+                -ms-overflow-style: none; /* IE and Edge */
+                scrollbar-width: none; /* Firefox */
+                
                 .Location-Filter-List {
                     position: relative;
                     -ms-flex-direction: column;
@@ -345,7 +348,11 @@ ul,p,li{padding:0;margin:0;list-style:none;}
                         }
                     }
                 }
+                &::-webkit-scrollbar {
+                    display: none; /* Chrome, Safari, Opera*/
+                }
             }
+            
             .Location-Map-Region {
                 display: flex;
                 flex-direction: column;

@@ -582,6 +582,10 @@ ul, p, li {
   overflow-x: auto;
   white-space: nowrap;
   overflow-scrolling: touch;
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
 }
 
 .App-Wrapper .Content-Wrapper .List-Location-Content .Location-Filter-Nav .Location-Filter-List {
@@ -636,6 +640,11 @@ ul, p, li {
   height: 3px;
   border-radius: 100px;
   background-color: #ff7100;
+}
+
+.App-Wrapper .Content-Wrapper .List-Location-Content .Location-Filter-Nav::-webkit-scrollbar {
+  display: none;
+  /* Chrome, Safari, Opera*/
 }
 
 .App-Wrapper .Content-Wrapper .List-Location-Content .Location-Map-Region {
