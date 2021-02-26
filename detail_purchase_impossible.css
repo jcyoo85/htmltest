@@ -145,8 +145,8 @@ a{text-decoration: none}
 }
 
 /* detail style */
-.visible{display:block;}
-.invisible{display:none;}
+.visible{display:block !important;}
+.invisible{display:none !important;}
 .App-Wrapper {
     padding-top: 56px;
     max-width: 768px;
